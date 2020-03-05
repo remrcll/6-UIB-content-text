@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>List of XML and HTML character entity references</h1>
+    <hr />
+    <h6>From Wikipedia, the free encyclopedia</h6>
+    <p>
+      In SGML, HTML and XML documents, the logical constructs known as
+      <i>character data</i> and <i>attribute values</i> consist of sequences of
+      characters, in which each character can manifest directly (representing
+      itself), or can be represented by a series of characters called a
+      <i>character reference</i>, of which there are two types: a
+      <i>numeric character reference</i> and a
+      <i><b>character entity reference</b> </i>. This article lists the
+      character entity references that are valid in HTML and XML documents.
+    </p>
+    <p>
+      A character entity reference refers to the content of a named entity. An
+      entity declaration is created by using the
+      <code>&lt;!ENTITY name "value"&gt;</code> syntax in a Document Type
+      Definition (DTD).
+    </p>
+    <h2>Character reference overview</h2>
+    <hr />
+    <p>
+      A <i>numeric character reference</i> refers to a character by its
+      <a
+        href="/wiki/Universal_Character_Set"
+        class="mw-redirect"
+        title="Universal Character Set"
+        >Universal Character Set</a
+      >/<a href="/wiki/Unicode" title="Unicode">Unicode</a> <i>code point</i>,
+      and uses the format:
+    </p>
+    <dl>
+      <dd><code>&amp;#</code><i>nnnn</i><code>;</code></dd>
+    </dl>
+    <p>or</p>
+    <dl>
+      <dd><code>&amp;#x</code><i>hhhh</i><code>;</code></dd>
+    </dl>
+    <p>
+      where <i>nnnn</i> is the code point in
+      <a href="/wiki/Decimal" title="Decimal">decimal</a> form, and
+      <i>hhhh</i> is the code point in
+      <a href="/wiki/Hexadecimal" title="Hexadecimal">hexadecimal</a> form. The
+      <i>x</i> must be lowercase in XML documents. The <i>nnnn</i> or
+      <i>hhhh</i> may be any number of digits and may include leading zeros. The
+      <i>hhhh</i> may mix uppercase and lowercase, though uppercase is the usual
+      style.
+    </p>
+    <p>
+      In contrast, a <i>character entity reference</i> refers to a character by
+      the name of an
+      <i><a href="/wiki/SGML_entity" title="SGML entity">entity</a></i> which
+      has the desired character as its <i>replacement text</i>. The entity must
+      either be predefined (built into the markup language) or explicitly
+      declared in a
+      <a
+        href="/wiki/Document_Type_Definition"
+        class="mw-redirect"
+        title="Document Type Definition"
+        >Document Type Definition</a
+      >
+      (DTD). The format is the same as for any entity reference:
+    </p>
+    <dl>
+      <dd><code>&amp;</code><i>name</i><code>;</code></dd>
+    </dl>
+    <p>
+      where <i>name</i> is the case-sensitive name of the entity. The semicolon
+      is required, unless marked otherwise in the table below (see
+      <sup id="cite_ref-semicolon_1-0" class="reference"
+        ><a href="#cite_note-semicolon-1">[a]</a></sup
+      >).
+    </p>
+  </body>
+</html>
